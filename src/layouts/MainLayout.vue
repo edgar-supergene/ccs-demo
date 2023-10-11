@@ -12,7 +12,7 @@
         />
 
         <q-toolbar-title>
-          안녕!!
+          안녕!! 배포 테스트!!
         </q-toolbar-title>
 
         <div>Quasar v{{ $q.version }}</div>

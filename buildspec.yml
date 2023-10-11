@@ -23,6 +23,7 @@ phases:
       - echo Buile Phase >> Build completed on `date`
       - aws s3 sync ./dist/spa $S3_BUCKET --delete
 # # 빌드 결과물로 나온 아티팩트에 대한 정보를 제공합니다.
+# # 아티팩트는 s3루트에 codebuild 프로젝트 이름으로 폴더가 생성되고 하위에 결과가 업로드됨
 # artifacts:
 #   # 빌드 환경에서 빌드 출력 결과물이 생성되는 위치를 나타냅니다.
 #   # '**/*'는 모든 파일을 재귀적으로 나타냅니다.
