@@ -21,13 +21,13 @@ phases:
   post_build:
     commands:
       - echo Buile Phase >> Build completed on `date`
-      # - aws s3 sync ./dist/spa $S3_BUCKET --delete
-# 빌드 결과물로 나온 아티팩트에 대한 정보를 제공합니다.
-artifacts:
-  # 빌드 환경에서 빌드 출력 결과물이 생성되는 위치를 나타냅니다.
-  # '**/*'는 모든 파일을 재귀적으로 나타냅니다.
-  files:
-    - '**/*'
-  # 출력 base 폴더
-  base-directory: 'dist/spa'
+      - aws s3 sync ./dist/spa $S3_BUCKET --delete
+# # 빌드 결과물로 나온 아티팩트에 대한 정보를 제공합니다.
+# artifacts:
+#   # 빌드 환경에서 빌드 출력 결과물이 생성되는 위치를 나타냅니다.
+#   # '**/*'는 모든 파일을 재귀적으로 나타냅니다.
+#   files:
+#     - '**/*'
+#   # 출력 base 폴더
+#   base-directory: 'dist/spa'
 
